@@ -1,0 +1,24 @@
+{
+  "name": "models",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonatanLima/models.git"
+  },
+  "keywords": [],
+  "author": "JonatanLima <jotanlima@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JonatanLima/models/issues"
+  },
+  "homepage": "https://github.com/JonatanLima/models#readme",
+  "devDependencies": {
+    "@types/node": "^16.11.6",
+    "typescript": "^4.4.4"
+  }
+}
