@@ -1,3 +1,3 @@
 # models
 
-Practice DTOS, Mappers and repository pattern with TypeScript.
+Practice DTOS, Mappers, and Repository Pattern with TypeScript
