@@ -1,12 +1,27 @@
 import User from '../models/user-model';
 import { Mapper } from './mapper'
 
+export type UserMongoDB = {
+	full_name: string
+	age: number
+	email: string
+	gender: string
+}
+
+export type UserMysqlDB = {
+	first_name: string
+	last_name: string
+	age: number
+	email: string
+	gender: string
+}
+
 export default class UserMapper implements Mapper {
 	public toDomain(model: User) {
 		return model
 	}
 
-	public toMongoDB(model: User) {
+	public toMongoDB(model: User): UserMongoDB {
 		return {
 			full_name: model.getFullName(),
 			age: model.age,
@@ -15,7 +30,7 @@ export default class UserMapper implements Mapper {
 		}
 	}
 
-	 public toMysqlDB(model: User) {
+	 public toMysqlDB(model: User): UserMysqlDB {
 		return {
 			first_name: model.firstName,
 			last_name: model.lastName,
